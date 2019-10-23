@@ -40,7 +40,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="{{URL::to('/')}}" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="{{URL::to('packages')}}" class="nav-link">Packages</a></li>
-                <li class="nav-item"><a href="{{URL::to('customepackages')}}" class="nav-link">Custom packages</a></li>
+                <li class="nav-item"><a href="{{URL::to('custompackages')}}" class="nav-link">Custom packages</a></li>
                 <li class="nav-item"><a href="{{URL::to('about')}}" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="{{URL::to('contact')}}" class="nav-link">Contact</a></li>
             </ul>
@@ -553,7 +553,7 @@
 <script src="{{URL::to('js/bootstrap-datepicker.js')}}"></script>
 <script src="{{URL::to('js/jquery.timepicker.min.js')}}"></script>
 <script src="{{URL::to('js/scrollax.min.js')}}"></script>
-<script src="{{URL::to('https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="{{URL::to('js/google-map.js')}}"></script>
 <script src="{{URL::to('js/main.js')}}"></script>
 

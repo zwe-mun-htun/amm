@@ -22,4 +22,11 @@ Route::get('packages', function(){
 Route::get('about', function(){
     return view('layout/about');
 });
+Route::get('contact',function (){
+    return view('layout/contact');
+});
+
+Route::get('custompackages',function (){
+    return view('layout/custompackages');
+});
 

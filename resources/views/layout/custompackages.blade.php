@@ -8,24 +8,24 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{URL::to('css/open-iconic-bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{URL::to('css/animate.css')}}">
+    <link rel="stylesheet" href="   css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-    <link rel="stylesheet" href="{{URL::to('css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{URL::to('css/owl.theme.default.min.css')}}">
-    <link rel="stylesheet" href="{{URL::to('css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <link rel="stylesheet" href="{{URL::to('css/aos.css')}}">
+    <link rel="stylesheet" href="css/aos.css">
 
-    <link rel="stylesheet" href="'{{URL::to('css/ionicons.min.css')}}">
+    <link rel="stylesheet" href="css/ionicons.min.css">
 
-    <link rel="stylesheet" href="{{URL::to('css/bootstrap-datepicker.css')}}">
-    <link rel="stylesheet" href="{{URL::to('css/jquery.timepicker.css')}}">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
 
 
-    <link rel="stylesheet" href="{{URL::to('css/flaticon.css')}}">
-    <link rel="stylesheet" href="{{URL::to('css/icomoon.css')}}">
-    <link rel="stylesheet" href="{{URL::to('css/style.css')}}">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -40,9 +40,9 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="{{URL::to('/')}}" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="{{URL::to('packages')}}" class="nav-link">Packages</a></li>
-                <li class="nav-item"><a href="{{URL::to('custompackages')}}" class="nav-link">Custom Packages</a></li>
+                <li class="nav-item active"><a href="{{URL::to('custompackages')}}" class="nav-link">Custom Packages</a></li>
                 <li class="nav-item"><a href="{{URL::to('about')}}" class="nav-link">About</a></li>
-                <li class="nav-item active"><a href="{{URL::to('contact')}}" class="nav-link">Contact</a></li>
+                <li class="nav-item "><a href="{{URL::to('contact')}}" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -54,7 +54,7 @@
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
             <div class="col-md-9 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Get in touch with us</h1>
+                <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Custom Packages and Car Rental Services</h1>
             </div>
         </div>
     </div>
@@ -90,10 +90,18 @@
                         <input type="text" class="form-control" placeholder="Your Email">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subject">
+                        <input type="text" class="form-control" placeholder="Phone Number">
                     </div>
                     <div class="form-group">
-                        <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                        <select name="package_id" id="activities" class="form-control" style="font-family:Pyidaungsu; padding: 20px;">
+                            <optgroup label="Request Type">
+
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="inp_long_desc">Full description</label>
+                        <textarea class="form-control" name="desc" id="inp_long_desc" rows="6" required></textarea>
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -102,9 +110,6 @@
 
             </div>
 
-            <div class="col-md-6">
-                <div id="map"></div>
-            </div>
         </div>
     </div>
 </section>
