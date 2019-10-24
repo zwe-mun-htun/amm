@@ -26,7 +26,11 @@ Route::get('contact',function (){
     return view('layout/contact');
 });
 
-Route::get('custompackages',function (){
+Route::get('custom_packages',function (){
     return view('layout/custompackages');
+});
+
+Route::get('package_details',function (){
+    return view('layout/packagedetails');
 });
 
