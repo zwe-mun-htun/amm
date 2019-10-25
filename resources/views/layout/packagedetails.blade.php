@@ -131,6 +131,7 @@ $single_master = Config::get('app_config.blade.user_master');
                                 <li>မိုင်းသောက်တံတား</li>
                             </ul>
                             <ul class="ml-md-5">
+                                <li>ပါဝင်မည့်ဝန်ဆောင်မှုလေးတွေကတော့</li>
                                 <li>Aircon Express Bus</li>
                                 <li>ရေသန့်/စနိုးတာဝါ/သွားတိုက်ဆေး/သွားတိုက်တံ</li>
                                 <li>တစ်ဆင့်သွား (ကားခ၊လှေခများ)</li>
