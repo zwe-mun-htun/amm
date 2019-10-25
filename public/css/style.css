@@ -12,9 +12,9 @@
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
-  --green: #F9BE37;
-  --teal: #f9be37;
-  --cyan: #f9be37;
+  --green: transparent;
+  --teal: transparent;
+  --cyan: transparent;
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
@@ -56,13 +56,14 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
+  padding-top: 0px;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+   }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -3240,6 +3241,8 @@ input[type="button"].btn-block {
   display: block; }
 
 .navbar {
+  margin: 0px;
+  padding: 0px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6328,7 +6331,7 @@ button.bg-dark:focus {
 .ml-auto,
 .mx-auto {
   margin-left: auto !important;
-background: #F9BE37}
+background: transparent}
 
 @media (min-width: 576px) {
   .m-sm-0 {
@@ -7366,10 +7369,10 @@ h1, h2, h3, h4, h5,
       display: inline-block;
       color: #fff; }
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
-      background: #f9be37;
-      border: 1px solid #f9be37; }
+      background: transparent;
+      border: 1px solid transparent; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
-    border-color: #f9be37; }
+    border-color: transparent; }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
     color: rgba(255, 255, 255, 0.5); }
   .ftco-navbar-light .navbar-toggler {
@@ -7390,10 +7393,10 @@ h1, h2, h3, h4, h5,
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
     .ftco-navbar-light.scrolled .nav-item.active > a {
-      color: #f9be37 !important; }
+      color: transparent !important; }
     .ftco-navbar-light.scrolled .nav-item.cta > a {
       color: #fff !important;
-      background: #f9be37;
+      background: transparent;
       border: none !important;
       padding-top: 0.5rem !important;
       padding-bottom: .5rem !important;
@@ -7408,7 +7411,7 @@ h1, h2, h3, h4, h5,
         display: inline-block;
         color: #fff !important; }
     .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
-      border-color: #f9be37; }
+      border-color: transparent; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light.scrolled .navbar-nav {
         background: none;
@@ -7434,7 +7437,7 @@ h1, h2, h3, h4, h5,
       padding-bottom: 0.9rem !important;
       color: #000000 !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
-        color: #f9be37 !important; }
+        color: transparent !important; }
     .ftco-navbar-light.scrolled.awake {
       margin-top: 0px;
       -webkit-transition: .3s all ease-out;
@@ -7456,6 +7459,7 @@ h1, h2, h3, h4, h5,
   height: 100%;
   position: inherit; }
   .hero-wrap .overlay {
+
     position: absolute;
     top: 0;
     left: 0;

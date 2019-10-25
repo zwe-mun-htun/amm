@@ -7,7 +7,7 @@ $single_master = Config::get('app_config.blade.user_master');
 
 
 
-<div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');">
+<div class="hero-wrap js-fullheight" style="background-color: goldenrod">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
@@ -29,10 +29,10 @@ $single_master = Config::get('app_config.blade.user_master');
                 <p><span>Address:</span>Kyan Mar Yay Seik Kan Compound, Corner of Pansodan Road and South of Kannar Road, Seikkan Township 11181 Yangon </p>
             </div>
             <div class="col-md-3">
-                <p><span>Phone:</span> <a href="tel://1234567920">09 693 560271</a></p>
+                <p><span>Phone:</span> <a href="tel://1234567920">09693560271, 09751782245</a></p>
             </div>
             <div class="col-md-3">
-                <p><span>Email:</span> <a href="mailto:info@yoursite.com">b2b@ravenmm.digital</a></p>
+                <p><span>Email:</span> <a href="mailto:b2b@ravenmm.digital">b2b@ravenmm.digital</a></p>
             </div>
             <div class="col-md-3">
                 <p><span>Website</span> <a href="#">http://www.aroundmm.com</a></p>
@@ -61,7 +61,7 @@ $single_master = Config::get('app_config.blade.user_master');
             </div>
 
             <div class="col-md-6">
-                <div id="map"></div>
+                <iframe  id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61110.64005498254!2d96.15438257180847!3d16.805755837877022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed7e4959337b%3A0x4bf5ccc4dae9b3d8!2sAroundMM!5e0!3m2!1sen!2smm!4v1572031721571!5m2!1sen!2smm" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
         </div>
     </div>

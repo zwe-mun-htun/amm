@@ -34,3 +34,14 @@ Route::get('package_details',function (){
     return view('layout/packagedetails');
 });
 
+
+Route::get('hotels', function (){
+    return view('layout/coming_soon');
+});
+
+
+Route::get('car_rentals', function (){
+    return view('layout/coming_soon');
+});
+
+

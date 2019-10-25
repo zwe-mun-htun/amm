@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Around MM</title>
+    <title>Around MM | Domestic Tour Packages, Hotels, Buses around Myanmar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     @yield("title_meta")
     <title>AroundMM Tour Platform</title>
-    @include('layout.include.user_header');
+    @include('layout.include.user_header')
     @yield('css')
 
 </head>
@@ -19,6 +19,7 @@
 @yield('content')
 
 @include('layout.include.user_footer')
+
 @yield('script')
 <script src="{{URL::to('js/jquery.min.js')}}"></script>
 <script src="{{URL::to('js/jquery-migrate-3.0.1.min.js')}}"></script>
