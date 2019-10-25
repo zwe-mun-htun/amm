@@ -40,7 +40,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="{{URL::to('/')}}" class="nav-link">Home</a></li>
                 <li class="nav-item active"><a href="{{URL::to('packages')}}" class="nav-link">Packages</a></li>
-                <li class="nav-item "><a href="{{URL::to('custompackages')}}" class="nav-link">Custom Packages</a></li>
+                <li class="nav-item "><a href="{{URL::to('custom_packages')}}" class="nav-link">Custom Packages</a></li>
                 <li class="nav-item"><a href="{{URL::to('about')}}" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="{{URL::to('contact')}}" class="nav-link">Contact</a></li>
             </ul>

@@ -40,7 +40,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="{{URL::to('/')}}" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="{{URL::to('packages')}}" class="nav-link">Packages</a></li>
-                <li class="nav-item"><a href="{{URL::to('custompackages')}}" class="nav-link">Custom packages</a></li>
+                <li class="nav-item"><a href="{{URL::to('custom_packages')}}" class="nav-link">Custom packages</a></li>
                 <li class="nav-item"><a href="{{URL::to('about')}}" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="{{URL::to('contact')}}" class="nav-link">Contact</a></li>
             </ul>
@@ -195,18 +195,6 @@
     </div>
 </section>
 
-<section class="ftco-about d-md-flex">
-    <div class="one-half img" style="background-image: url(images/about.jpg);"></div>
-    <div class="one-half ftco-animate">
-        <div class="heading-section ftco-animate ">
-            <h2 class="mb-4">Our Story</h2>
-        </div>
-        <div>
-            <p>In Myanmar, Travel and tours companies are running on facebook and they are difficult to get customers. As a travelers, there are many tour packages so they cannot choose right and fair packages. So we,Around MM developed tour platform in Myanmar to provide travelers with fair prices and excellent services. We offer other services like tour guide and car rental services.</p>
-        </div>
-    </div>
-</section>
-
 <section class="ftco-section services-section bg-light">
     <div class="container">
         <div class="row d-flex">
@@ -260,7 +248,7 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm col-md-6 col-lg ftco-animate">
+            <div class="col-sm col-md-3 col-sm ftco-animate">
                 <div class="destination">
                     <a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-1.jpg);">
                         <div class="icon d-flex justify-content-center align-items-center">
@@ -289,113 +277,12 @@
                         <hr>
                         <p class="bottom-area d-flex">
                             <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Discover</a></span>
+                            <span class="ml-auto"><a href="{{URL('package_details')}}">Discover</a></span>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm col-md-6 col-lg ftco-animate">
-                <div class="destination d-md-flex flex-column-reverse">
-                    <a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-2.jpg);">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="icon-link"></span>
-                        </div>
-                    </a>
-                    <div class="text p-3">
-                        <div class="d-flex">
-                            <div class="one">
-                                <h3><a href="#">Paris, Italy</a></h3>
-                                <p class="rate">
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star-o"></i>
-                                    <span>8 Rating</span>
-                                </p>
-                            </div>
-                            <div class="two">
-                                <span class="price">$200</span>
-                            </div>
-                        </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
-                        <p class="days"><span>2 days 3 nights</span></p>
-                        <hr>
-                        <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Discover</a></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm col-md-6 col-lg ftco-animate">
-                <div class="destination">
-                    <a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-3.jpg);">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="icon-link"></span>
-                        </div>
-                    </a>
-                    <div class="text p-3">
-                        <div class="d-flex">
-                            <div class="one">
-                                <h3><a href="#">Paris, Italy</a></h3>
-                                <p class="rate">
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star-o"></i>
-                                    <span>8 Rating</span>
-                                </p>
-                            </div>
-                            <div class="two">
-                                <span class="price">$200</span>
-                            </div>
-                        </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
-                        <p class="days"><span>2 days 3 nights</span></p>
-                        <hr>
-                        <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Discover</a></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm col-md-6 col-lg ftco-animate">
-                <div class="destination d-md-flex flex-column-reverse">
-                    <a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-4.jpg);">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="icon-link"></span>
-                        </div>
-                    </a>
-                    <div class="text p-3">
-                        <div class="d-flex">
-                            <div class="one">
-                                <h3><a href="#">Paris, Italy</a></h3>
-                                <p class="rate">
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star"></i>
-                                    <i class="icon-star-o"></i>
-                                    <span>8 Rating</span>
-                                </p>
-                            </div>
-                            <div class="two">
-                                <span class="price">$200</span>
-                            </div>
-                        </div>
-                        <p>Far far away, behind the word mountains, far from the countries</p>
-                        <p class="days"><span>2 days 3 nights</span></p>
-                        <hr>
-                        <p class="bottom-area d-flex">
-                            <span><i class="icon-map-o"></i> San Franciso, CA</span>
-                            <span class="ml-auto"><a href="#">Discover</a></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
