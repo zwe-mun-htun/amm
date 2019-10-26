@@ -148,10 +148,39 @@ $single_master = Config::get('app_config.blade.user_master');
                         <p> 12/11/2019</p>
                         <p>စျေးနှုန်း</p>
                         <p>140000MMK</p>
+                        <h2>Order Here</h2>
+                       <form>
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label class="sr-only" for="name">Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Name" name="name">
+                                </div>
+
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label class="sr-only" for="phno">Phone Number</label>
+                                    <input type="number" id="phno" class="form-control" placeholder="Phone No." name="phno">
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label class="sr-only" for="address">Address</label>
+                                    <input type="text" id="address" class="form-control" placeholder="address" name="address">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" value="Order" class="btn btn-primary">
+                            </div>
+
+                        </form>
                     </div>
             </div> <!-- .col-md-8 -->
         </div>
     </div>
     </div>
-</section> <!-- .section -->
+</section> <!-- .section -->zzz
 @endsection
