@@ -208,9 +208,10 @@ $single_master = Config::get('app_config.blade.user_master');
                 </div>
                 <div class="container-fluid">
                     <div class="row">
+                        @foreach($package as $value)
                         <div class="col-sm col-md-3 col-sm ftco-animate">
                             <div class="destination">
-                                <a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-1.jpg);">
+                                <a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/{{$value['image']}});">
                                     <div class="icon d-flex justify-content-center align-items-center">
                                         <span class="icon-link"></span>
                                     </div>
@@ -218,7 +219,8 @@ $single_master = Config::get('app_config.blade.user_master');
                                 <div class="text p-3">
                                     <div class="d-flex">
                                         <div class="one">
-                                            <h3><a href="#">Bagan</a></h3>
+
+                                            <h3><a href="#">{{$value['title']}}</a></h3>
                                             <p class="rate">
                                                 <i class="icon-star"></i>
                                                 <i class="icon-star"></i>
@@ -229,7 +231,7 @@ $single_master = Config::get('app_config.blade.user_master');
                                             </p>
                                         </div>
                                         <div class="two">
-                                            <span class="price">85000MMK</span>
+                                            <span class="price">{{$value['amount']}}MMK</span>
                                         </div>
                                     </div>
                                     <p>Far far away, behind the word mountains, far from the countries</p>
@@ -242,7 +244,7 @@ $single_master = Config::get('app_config.blade.user_master');
                                 </div>
                             </div>
                         </div>
-
+                        @endforeach
                     </div>
                 </div>
             </section>

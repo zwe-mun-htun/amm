@@ -11,14 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PackagesController@home');
 
 
-Route::get('packages', function(){
-    return view('layout/packages');
-});
+Route::get('packages', 'PackagesController@get_all');
 Route::get('about', function(){
     return view('layout/about');
 });

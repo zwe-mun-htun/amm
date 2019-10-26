@@ -92,13 +92,13 @@ $single_master = Config::get('app_config.blade.user_master');
                     <div class="col-md-12 ftco-animate">
                         <div class="single-slider owl-carousel">
                             <div class="item">
-                                <div class="hotel-img" style="background-image: url(images/hotel-2.jpg);"></div>
+                                <div class="hotel-img" style="background-image: url(images/cover.jpg);"></div>
                             </div>
                             <div class="item">
-                                <div class="hotel-img" style="background-image: url(images/hotel-3.jpg);"></div>
+                                <div class="hotel-img" style="background-image: url(images/cover1.jpg);"></div>
                             </div>
                             <div class="item">
-                                <div class="hotel-img" style="background-image: url(images/hotel-4.jpg);"></div>
+                                <div class="hotel-img" style="background-image: url(images/cover2.jpg);"></div>
                             </div>
                         </div>
                     </div>
