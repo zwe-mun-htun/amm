@@ -306,7 +306,19 @@ $single_master = Config::get('app_config.blade.user_master');
                         </div>
                     </div>
                 </div>
-            </section>
+	    </section>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ad1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1790118972080176"
+     data-ad-slot="1466518355"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
             <section class="ftco-section-parallax">
                 <div class="parallax-img d-flex align-items-center">
@@ -330,5 +342,4 @@ $single_master = Config::get('app_config.blade.user_master');
                     </div>
                 </div>
             </section>
-
         @endsection
