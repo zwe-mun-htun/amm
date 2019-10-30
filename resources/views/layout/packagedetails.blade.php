@@ -20,74 +20,8 @@ $single_master = Config::get('app_config.blade.user_master');
 <section class="ftco-section ftco-degree-bg">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 sidebar">
-                <div class="sidebar-wrap ftco-animate">
-                    <h3 class="heading mb-4">Find Packages</h3>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Insert Keywords">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="checkin_date" class="form-control" placeholder="Date from">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="checkin_date" class="form-control" placeholder="Date to">
-                            </div>
-                            <div class="form-group">
-                                <div class="range-slider">
-		              		<span>
-										    <input type="number" value="25000" min="0" max="120000"/>	-
-										    <input type="number" value="50000" min="0" max="120000"/>
-										  </span>
-                                    <input value="1000" min="0" max="120000" step="500" type="range"/>
-                                    <input value="50000" min="0" max="120000" step="500" type="range"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Search" class="btn btn-primary py-3 px-5">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="sidebar-wrap ftco-animate">
-                    <h3 class="heading mb-4">Star Rating</h3>
-                    <form method="post" class="star-rating">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">
-                                <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span></p>
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">
-                                <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i></span></p>
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">
-                                <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">
-                                <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">
-                                <p class="rate"><span><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
-                            </label>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-9">
+
+            <div class="col-lg-8">
                 <div class="row">
                     <div class="col-md-12 ftco-animate">
                         <div class="single-slider owl-carousel">
@@ -103,11 +37,11 @@ $single_master = Config::get('app_config.blade.user_master');
                         </div>
                     </div>
                     <div class="col-md-12 hotel-single mt-4 mb-5 ftco-animate">
-                        <h1>ကလော-ပင်းတယ--အင်းလေး-တောင်ကြီးတန်ဆောင်တိုင်မီးပုံးပျံပွဲတော်</h1>
-                        <h2>သီတင်းကျွတ်ပိတ်ရက်ပြီးသွားပြီဆိုတော့ မကြာမီရောက်လာတော့မယ့် တန်ဆောင်တိုင်ပိတ်ရက်လေးတွေရော ဘယ်တွေသွားပြီးအပန်းဖြေဖို့စဉ်းစားထားလဲ ???</h2>
-                        <p>ပို့ဆောင်ပေးမည့်နေရာလေးတွေကတော့</p>
-                        <div class="d-md-flex mt-5 mb-5">
-                            <ul>
+                        <h4>ကလော-ပင်းတယ--အင်းလေး-တောင်ကြီးတန်ဆောင်တိုင်မီးပုံးပျံပွဲတော်</h4>
+                        <h5>သီတင်းကျွတ်ပိတ်ရက်ပြီးသွားပြီဆိုတော့ မကြာမီရောက်လာတော့မယ့် တန်ဆောင်တိုင်ပိတ်ရက်လေးတွေရော ဘယ်တွေသွားပြီးအပန်းဖြေဖို့စဉ်းစားထားလဲ ???</h5>
+                        <p>ပို့ဆောင်ပေးမည့်နေရာလေးတွေကတော့</p><br>
+                        <div class="d-md-flex mt-6 mb-6">
+                            <ul">
                                 <li>တန်ခိုးကြီး ကလောနှီးဘုရား</li>
                                 <li>ကလော ဘူတာ</li>
                                 <li>ကလောစျေး</li>
@@ -128,26 +62,37 @@ $single_master = Config::get('app_config.blade.user_master');
                                 <li>ငွေထည်လုပ်ငန်း</li>
                                 <li>ရိုးရာယက္ကန်းရုံလုပ်ငန်း</li>
                                 <li>ပဒေါင်းရိုးရာအိမ်</li>
-                                <li>မိုင်းသောက်တံတား</li>
-                            </ul>
-                            <ul class="ml-md-5">
-                                <li>ပါဝင်မည့်ဝန်ဆောင်မှုလေးတွေကတော့</li>
-                                <li>Aircon Express Bus</li>
-                                <li>ရေသန့်/စနိုးတာဝါ/သွားတိုက်ဆေး/သွားတိုက်တံ</li>
-                                <li>တစ်ဆင့်သွား (ကားခ၊လှေခများ)</li>
-                                <li>အိမ်သုံးဆေးဝါးများ</li>
-                                <li>3star အဆင့်ရှိ ဟိုတယ်တွင် တစ်ညတာ တည်းခိုခွင့်</li>
-                                <li>ဝန်ဆောင်မှုပေးနိုင်ရန်နွေးထွေးပျူငှာသောTour Leader</li>
-                                <li>မနက် (၁ ကြိမ်)၊ နေ့လည် (၂ ကြိမ်)၊ ညစာ ( ၂ ကြိမ်)</li>
-                                <li>အဆာပြေ မုန့် နှင့် အအေး</li>
+                                <li>မိုင်းသောက်တံတား</li><br>
                             </ul>
                         </div>
-                        <p>စထွက်မည့်နေ့</p>
-                        <p> 08/11/2019</p>
-                        <p>ပြန်ရောက်မည့်နေ့</p>
-                        <p> 12/11/2019</p>
-                        <p>စျေးနှုန်း</p>
-                        <p>140000MMK</p>
+                        <p>ပါဝင်မည့်ဝန်ဆောင်မှုလေးတွေကတော့</p>
+                        <div class="d-md-flex mt-6 mb-6">
+                            <ul">
+                        <li>ရေသန့်/စနိုးတာဝါ/သွားတိုက်ဆေး/သွားတိုက်တံ</li>
+                        <li>တစ်ဆင့်သွား (ကားခ၊လှေခများ)</li>
+                        <li>အိမ်သုံးဆေးဝါးများ</li>
+                        <li>3star အဆင့်ရှိ ဟိုတယ်တွင် တစ်ညတာ တည်းခိုခွင့်</li>
+                        <li>ဝန်ဆောင်မှုပေးနိုင်ရန်နွေးထွေးပျူငှာသောTour Leader</li>
+                        <li>မနက် (၁ ကြိမ်)၊ နေ့လည် (၂ ကြိမ်)၊ ညစာ ( ၂ ကြိမ်)</li>
+                        <li>အဆာပြေ မုန့် နှင့် အအေး</li>
+                            </ul>
+                        </div><br>
+
+                        <div class="row col-md-4">
+                            <i class="fas fa-calendar-week m-1"></i>
+                            <p class="col-md-6">စထွက်မည့်နေ့</p>
+                            <p class="col-md-4">8/11/2019</p>
+                        </div>
+                        <div class="row col-md-4">
+                            <i class="fas fa-calendar-week m-1"></i>
+                            <p class="col-md-7">ပြန်ရောက်မည့်နေ့</p>
+                            <p class="col-md-0">12/11/2019</p>
+                        </div>
+                        <div class="row col-md-4">
+                            <i class="fas fa-money-check-alt"></i>
+                            <p class="col-md-4">စျေးနှုန်း</p>
+                            <p class="col-md-4">140000MMK</p>
+                        </div>
                         <h2>Order Here</h2>
                        <form>
                             <div class="row form-group">
@@ -180,7 +125,18 @@ $single_master = Config::get('app_config.blade.user_master');
                     </div>
             </div> <!-- .col-md-8 -->
         </div>
+            <div class="col-lg-2 sidebar">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="http://admin.aroundmm.com/public/logo/ammcover.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">See and Feel Travel and Tours</h5>
+                        <p class="card-text">See the nature of life</p>
+                        <a href="{{URL::to('/')}}" class="btn btn-primary">Go To Company Website</a>
+                    </div>
+                </div>
+            </div>
+
     </div>
     </div>
-</section> <!-- .section -->zzz
+</section> <!-- .section -->
 @endsection

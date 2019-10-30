@@ -39,5 +39,7 @@ Route::get('hotels', function (){
 Route::get('car_rentals', function (){
     return view('layout/coming_soon');
 });
-
+Route::get('booking_condition',function (){
+    return view('layout/bookingcondition');
+});
 

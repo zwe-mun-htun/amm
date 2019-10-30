@@ -17,8 +17,7 @@
                 <div class="ftco-footer-widget mb-4 ml-md-4">
                     <h2 class="ftco-heading-2">Information</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="py-2 d-block">About Us</a></li>
-                        <li><a href="#" class="py-2 d-block">Call Us</a></li>
+                        <li><a href="{{URL::to('about')}}" class="py-2 d-block">About Us</a></li>
                         <li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
                         <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
                         <li><a href="#" class="py-2 d-block">Refund policy</a></li>

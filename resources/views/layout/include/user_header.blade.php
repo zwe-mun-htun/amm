@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="{{URL::to('css/flaticon.css')}}">
 <link rel="stylesheet" href="{{URL::to('css/icomoon.css')}}">
 <link rel="stylesheet" href="{{URL::to('css/style.css')}}">
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
 
 
