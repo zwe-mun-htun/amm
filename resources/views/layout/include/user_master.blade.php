@@ -8,11 +8,11 @@
     <meta property="og:title" content="AroundMM Tour Platform" />
     <meta name="description" content="AroundMM is online travel booking platform in Myanmar, provide tour packages, hotel booking and bus tickets.">
 
-    <meta property="og:url" content="{{URL::to('/')}}" />
-
+    <meta property="og:url" content="http://www.aroundmm.com/" />
+    <meta property="og:type" content="website"/>
     <meta property="og:description" content="AroundMM is online travel booking platform in Myanmar, provide tour packages, hotel booking and bus tickets.">
 
-    <meta property="og:image" content="{{URL::to('images/logo-x.jpg')}}">
+    <meta property="og:image" content="{{URL::to('images/amm-300.jpg')}}">
 
     @yield("title_meta")
     <title>AroundMM Tour Platform</title>
