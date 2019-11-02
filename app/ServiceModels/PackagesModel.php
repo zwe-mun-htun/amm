@@ -4,7 +4,7 @@
 namespace App\ServiceModels;
 
 
-use App\Models\packages;
+use App\Models\Packages;
 
 class PackagesModel
 {
