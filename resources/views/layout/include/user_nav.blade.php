@@ -9,10 +9,9 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="{{URL::to('/')}}" class="nav-link">Home</a></li>
                 <li class="nav-item "><a href="{{URL::to('packages')}}" class="nav-link">Tour Packages</a></li>
+                <li class="nav-item"><a href="{{URL::to('bus_tickets')}}" class="nav-link">Bus Tickets</a></li>
                 <li class="nav-item"><a href="{{URL::to('hotels')}}" class="nav-link">Hotels</a></li>
                 <li class="nav-item"><a href="{{URL::to('car_rentals')}}" class="nav-link">Car Rental</a></li>
-                <li class="nav-item"><a href="{{URL::to('contact')}}" class="nav-link">Contact</a></li>
-
             </ul>
         </div>
     </div>
