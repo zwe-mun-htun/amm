@@ -220,25 +220,22 @@ $single_master = Config::get('app_config.blade.user_master');
                                     <div class="d-flex">
                                         <div class="one">
 
-                                            <h3><a href="#">{{$value['title']}}</a></h3>
+                                            <p style="color: black"><a href="#">{{$value['title']}}</a></p>
                                             <p class="rate">
                                                 <i class="icon-star"></i>
                                                 <i class="icon-star"></i>
                                                 <i class="icon-star"></i>
                                                 <i class="icon-star"></i>
                                                 <i class="icon-star-half-o"></i>
-                                                <span>8 Rating</span>
+                                                <span>{{$value['rating']}}</span>
                                             </p>
                                         </div>
-                                        <div class="two">
-                                            <span class="price">{{$value['amount']}}MMK</span>
-                                        </div>
                                     </div>
-                                    <p>Far far away, behind the word mountains, far from the countries</p>
-                                    <p class="days"><span>2 days 3 nights</span></p>
+                                    <p>{{$value['short_title']}}</p>
+                                    <p class="days"><span>{{$value['duration']}}</span></p>
                                     <hr>
                                     <p class="bottom-area d-flex">
-                                        <span><i class="icon-map-o"></i> San Franciso, CA</span>
+                                        <span><i class="fas fa-money-check-alt m-2" ></i>{{$value['amount'].'MMK'}}</span>
                                         <span class="ml-auto"><a href="{{URL('package_details')}}">Discover</a></span>
                                     </p>
                                 </div>

@@ -15,6 +15,7 @@ Route::get('/', 'PackagesController@home');
 
 
 Route::get('packages', 'PackagesController@get_all');
+Route::get('hotels','HotelsController@get_all');
 Route::get('about', function(){
     return view('layout/about');
 });
@@ -31,13 +32,12 @@ Route::get('package_details',function (){
 });
 
 
-Route::get('hotels', function (){
-    return view('layout/coming_soon');
-});
-
 
 Route::get('car_rentals', function (){
     return view('layout/coming_soon');
+});
+Route::get('booking_condition',function (){
+    return view('layout/bookingcondition');
 });
 
 

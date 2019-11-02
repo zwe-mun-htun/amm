@@ -5,7 +5,7 @@
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Around MM</h2>
-                    <p>In Myanmar, Travel and tours companies are running on facebook and they are difficult to get customers. As a travelers, there are many tour packages so they cannot choose right and fair packages. So we,Around MM developed tour platform in Myanmar to provide travelers with fair prices and excellent services. We offer other services like tour guide and car rental services. </p>
+                    <p>AroundMM is online travel booking platform in Myanmar, provide tour packages, hotel booking and bus tickets.</p>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                         <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                         <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -17,8 +17,8 @@
                 <div class="ftco-footer-widget mb-4 ml-md-4">
                     <h2 class="ftco-heading-2">Information</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="py-2 d-block">About Us</a></li>
-                        <li><a href="#" class="py-2 d-block">Call Us</a></li>
+                        <li><a href="{{URL::to('contact')}}" class="py-2 d-block">Contact Us</a></li>
+                        <li><a href="{{URL::to('about')}}" class="py-2 d-block">About Us</a></li>
                         <li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
                         <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
                         <li><a href="#" class="py-2 d-block">Refund policy</a></li>
@@ -43,7 +43,7 @@
             <div class="col-md-12 text-center">
 
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |<a href="http://www.ravenmm.digital"> Raven MM</a>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |<a href="http://www.ravenmm.digital"> Raven MM Digital Solutions</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
         </div>
