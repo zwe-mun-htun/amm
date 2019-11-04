@@ -1,148 +1,162 @@
+<?php
+$single_master = Config::get('app_config.blade.user_master');
+//dd($package);
+?>
+@extends($single_master)
 
+@section('content')
 
-
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{URL::to('css/jquery.seat-charts.css')}}">
-    <link  href="{{URL::to('css/css/bus_style.css')}}" rel="stylesheet" type="text/css" media="all" />
-    <script  src="{{URL::to('js/jquery-1.11.0.min.js')}}"></script>
-    <script  src="{{URL::to('js/jquery.seat-charts.js')}}"></script>
-<div class="content">
-    <div class="main">
-        <h2>Book Your Seat Now?</h2>
-        <div class="wrapper">
-            <div id="seat-map">
-                <div class="front-indicator"><h3>Driver</h3></div>
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/cover2.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+                <div class="col-md-9 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                    <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Domestic Bus_Tickets</h1>
+                </div>
             </div>
-            <div class="booking-details">
-                <div id="legend"></div>
-                <h3> Selected Seats (<span id="counter">0</span>):</h3>
-                <ul id="selected-seats" class="scrollbar scrollbar1"></ul>
-
-                Total: <b>$<span id="total">0</span></b>
-
-                <button class="checkout-button">Book Now</button>
-            </div>
-            <div class="clear"></div>
         </div>
-        <script>
-            var firstSeatLabel = 1;
-
-            $(document).ready(function() {
-                var $cart = $('#selected-seats'),
-                    $counter = $('#counter'),
-                    $total = $('#total'),
-                    sc = $('#seat-map').seatCharts({
-                        map: [
-                            'ff_ff',
-                            'ff_ff',
-                            'ee_ee',
-                            'ee_ee',
-                            'ee___',
-                            'ee_ee',
-                            'ee_ee',
-                            'ee_ee',
-                            'ee_ee',
-                            'ee_ee',
-                            'ee_ee',
-                            'eeeee',
-
-                        ],
-                        seats: {
-                            f: {
-                                price   : 100,
-                                classes : 'first-class', //your custom CSS class
-                                category: 'First Class'
-                            },
-                            e: {
-                                price   : 40,
-                                classes : 'economy-class', //your custom CSS class
-                                category: 'Economy Class'
-                            }
-
-                        },
-                        naming : {
-                            top : false,
-                            getLabel : function (character, row, column) {
-                                return firstSeatLabel++;
-                            },
-                        },
-                        legend : {
-                            node : $('#legend'),
-                            items : [
-                                [ 'f', 'available',   'Vip' ],
-                                [ 'e', 'available',   'Economy Class'],
-                                [ 'f', 'unavailable', 'Already Booked']
-                            ]
-                        },
-                        click: function () {
-                            if (this.status() == 'available') {
-                                //let's create a new <li> which we'll add to the cart items
-                                $('<li>'+this.data().category+' : Seat no '+this.settings.label+': <b>$'+this.data().price+'</b> <a href="#" class="cancel-cart-item">[cancel]</a></li>')
-                                    .attr('id', 'cart-item-'+this.settings.id)
-                                    .data('seatId', this.settings.id)
-                                    .appendTo($cart);
-
-                                /*
-                                 * Lets update the counter and total
-                                 *
-                                 * .find function will not find the current seat, because it will change its stauts only after return
-                                 * 'selected'. This is why we have to add 1 to the length and the current seat price to the total.
-                                 */
-                                $counter.text(sc.find('selected').length+1);
-                                $total.text(recalculateTotal(sc)+this.data().price);
-
-                                return 'selected';
-                            } else if (this.status() == 'selected') {
-                                //update the counter
-                                $counter.text(sc.find('selected').length-1);
-                                //and total
-                                $total.text(recalculateTotal(sc)-this.data().price);
-
-                                //remove the item from our cart
-                                $('#cart-item-'+this.settings.id).remove();
-
-                                //seat has been vacated
-                                return 'available';
-                            } else if (this.status() == 'unavailable') {
-                                //seat has been already booked
-                                return 'unavailable';
-                            } else {
-                                return this.style();
-                            }
-                        }
-                    });
-
-                //this will handle "[cancel]" link clicks
-                $('#selected-seats').on('click', '.cancel-cart-item', function () {
-                    //let's just trigger Click event on the appropriate seat, so we don't have to repeat the logic here
-                    sc.get($(this).parents('li:first').data('seatId')).click();
-                });
-
-                //let's pretend some seats have already been booked
-                sc.get([sc.find()]).status('unavailable');
-
-            });
-
-            function recalculateTotal(sc) {
-                var total = 0;
-
-                //basically find every selected seat and sum its price
-                sc.find('selected').each(function () {
-                    total += this.data().price;
-                });
-
-                return total;
-            }
-        </script>
     </div>
-</div>
-<script   src="{{URL::to('js/jquery.nicescroll.js')}}"></script>
-<script   src="{{URL::to('js/scripts.js')}}></script>
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 sidebar order-md-last ftco-animate">
+                    <div class="sidebar-wrap ftco-animate">
+                        <h3 class="heading mb-4">Find Packages</h3>
+                        <form action="#">
+                            <div class="fields">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Insert Keywords">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="checkin_date" class="form-control checkin_date" placeholder="Date from">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="checkout_date" class="form-control checkout_date" placeholder="Date to">
+                                </div>
+                                <div class="form-group">
+                                    <div class="range-slider">
+		              		<span>
+										    <input type="number" value="25000" min="0" max="120000"/>	-
+										    <input type="number" value="50000" min="0" max="120000"/>
+										  </span>
+                                        <input value="1000" min="0" max="120000" step="500" type="range"/>
+                                        <input value="50000" min="0" max="120000" step="500" type="range"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Search" class="btn btn-primary py-3 px-5">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sidebar-wrap ftco-animate">
+                        <h3 class="heading mb-4">Star Rating</h3>
+                        <form method="post" class="star-rating">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                    <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span></p>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                    <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i></span></p>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                    <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                    <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                    <p class="rate"><span><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- END-->
+                <div class="col-lg-9">
+                    <div class="row">
+                        @foreach($bustickets as $value)
+                            <div class="col-sm col-md-6 col-lg-4 ftco-animate">
+                                <div class="destination">
+                                    <a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url('images/cover.jpg'); height: 150px; width:100%">
+                                        <div class="icon d-flex justify-content-center align-items-center">
+                                            <span class="icon-link"></span>
+                                        </div>
+                                    </a>
+                                    <div class="text p-3">
+
+                                        <h3><a href="#">{{$value['title']}}</a></h3>
+                                        <p class="days"><span>{{$value['amount']}}MMK</span></p>
+                                        <hr>
+                                        <p class="bottom-area d-flex">
+                                            @if($value['type'] == 0)
+                                                <span><i class="far fa-calendar"></i> Daily</span>
+                                                @endif
+
+                                            <span class="ml-auto"><a href="{{URL::to('package_details')}}">Book Now</a></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
 
 
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col text-center">
+                            <div class="block-27">
+                                <ul>
+                                    <li><a href="#">&lt;</a></li>
+                                    <li class="active"><span>1</span></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">&gt;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- .col-md-8 -->
+            </div>
+        </div>
+    </section> <!-- .section -->
 
+    <section class="ftco-section-parallax">
+        <div class="parallax-img d-flex align-items-center">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                        <h2>Send Feedback</h2>
+                        <p>Send feedback to improve more</p>
+                        <div class="row d-flex justify-content-center mt-5">
+                            <div class="col-md-8">
+                                <form action="#" class="subscribe-form">
+                                    <div class="form-group d-flex">
+                                        <input type="text" class="form-control" placeholder="Enter email address">
+                                        <input type="submit" value="Send" class="submit px-3">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
+@endsection
