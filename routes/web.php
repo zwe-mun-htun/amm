@@ -39,5 +39,8 @@ Route::get('car_rentals', function (){
 Route::get('booking_condition',function (){
     return view('layout/bookingcondition');
 });
+Route::get('bus_tickets',function(){
+    return view('layout\bus_tickets');
+});
 
 
