@@ -16,6 +16,7 @@ Route::get('/', 'PackagesController@home');
 
 Route::get('packages', 'PackagesController@get_all');
 Route::get('hotels','HotelsController@get_all');
+Route::get('bus_tickets','BusticketsController@get_all');
 Route::get('about', function(){
     return view('layout/about');
 });
@@ -39,8 +40,8 @@ Route::get('car_rentals', function (){
 Route::get('booking_condition',function (){
     return view('layout/bookingcondition');
 });
-Route::get('bus_tickets',function(){
-    return view('layout\bus_tickets');
-});
+
+
+
 
 

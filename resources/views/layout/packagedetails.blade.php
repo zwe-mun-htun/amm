@@ -96,7 +96,7 @@ $single_master = Config::get('app_config.blade.user_master');
                         <h2>Order Here</h2>
                        <form>
                             <div class="row form-group">
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <label class="sr-only" for="name">Name</label>
                                     <input type="text" id="name" class="form-control" placeholder="Name" name="name">
                                 </div>
@@ -104,21 +104,36 @@ $single_master = Config::get('app_config.blade.user_master');
                             </div>
 
                             <div class="row form-group">
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <label class="sr-only" for="phno">Phone Number</label>
                                     <input type="number" id="phno" class="form-control" placeholder="Phone No." name="phno">
                                 </div>
                             </div>
+                           <div class="row form-group">
+                               <div class="col-md-12">
+                                   <label >Number of People</label>
+                                   <select >
+                                       <optgroup label="Choose Number of People">
+                                           <option value="1">1</option>
+                                           <option value="2">2</option>
+                                       </optgroup>
+                                   </select>
+                               </div>
+                           </div>
 
                             <div class="row form-group">
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <label class="sr-only" for="address">Address</label>
                                     <input type="text" id="address" class="form-control" placeholder="address" name="address">
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <input type="submit" value="Order" class="btn btn-primary">
+
+
+                            <div class="row form-group" >
+                                <div class="col-md-6">
+                                <input type="submit" value="Order" class="btn btn-primary" >
+                                </div>
                             </div>
 
                         </form>

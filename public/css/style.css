@@ -7879,9 +7879,9 @@ h1, h2, h3, h4, h5,
       margin-bottom: 30px; } }
   .destination .img {
     display: block;
-    height: 300px; }
+    height: 50% }
   .destination .img-2 {
-    height: 300px; }
+    height:50% }
   .destination .icon {
     width: 60px;
     height: 60px;
