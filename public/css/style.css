@@ -7458,9 +7458,10 @@ h1, h2, h3, h4, h5,
   width: 100%;
   height: 100%;
   position: inherit; }
+
   .hero-wrap .overlay {
 
-    position: absolute;
+  position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -9453,3 +9454,17 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+}
